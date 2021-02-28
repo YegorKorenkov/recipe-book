@@ -1,8 +1,8 @@
 {
-  "recipes": [
+  "pizzas": [
     {
       "id": 0,
-      "name": "Baked Salmon",
+      "name": "Пепперони Фреш с перцем",
       "ingredients": [
         {
           "name": "Salmon",
@@ -40,51 +40,63 @@
     },
     {
       "id": 1,
-      "name": "Fish Tacos",
+      "name": "Пепперони Фреш с перцем",
       "ingredients": [
         {
-          "name": "Whitefish",
+          "name": "Salmon",
           "amount": "1"
         },
         {
-          "name": "Cheese",
+          "name": "Pine Nuts",
           "amount": "1"
         },
         {
-          "name": "Iceberg Lettuce",
+          "name": "Butter Lettuce",
           "amount": "2"
         },
         {
-          "name": "Tomatoes",
-          "amount": "2"
+          "name": "Yellow Squash",
+          "amount": "1"
         },
         {
-          "name": "Tortillas",
+          "name": "Olive Oil",
+          "amount": "0.5"
+        },
+        {
+          "name": "Garlic",
           "amount": "3"
         }
       ],
       "steps": [
-        "Cook the fish on the grill until hot.",
-        "Place the fish on the 3 tortillas.",
-        "Top them with lettuce, tomatoes, and cheese."
+        "Preheat the oven to 350 degrees.",
+        "Spread the olive oil around a glass baking dish.",
+        "Add the salmon, garlic, and pine nuts to the dish.",
+        "Bake for 15 minutes.",
+        "Add the yellow squash and put back in the oven for 30 mins.",
+        "Remove from oven and let cool for 15 minutes. Add the lettuce and serve."
       ]
     },
     {
-      "id": 2,
-      "name": "Tako",
+      "name": "",
       "ingredients": [
         {
-          "name": "Tomato",
-          "amount": "3"
-        },
-        {
-          "name": "Chilie",
-          "amount": "2"
+          "name": "",
+          "amount": ""
         }
       ],
-      "steps": [
-        "Cook"
-      ]
+      "steps": [],
+      "id": 2
+    },
+    {
+      "name": "",
+      "ingredients": [
+        {
+          "name": "",
+          "amount": ""
+        }
+      ],
+      "steps": [],
+      "id": 3
     }
   ]
 }

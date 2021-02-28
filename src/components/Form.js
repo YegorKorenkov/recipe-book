@@ -7,8 +7,6 @@ const Form = (props) => {
     const [ingredients, setIngredients] = React.useState([{name: '', amount: ''}]);
     const [steps, setSteps] = React.useState([]);
 
-    //console.log(props.location.sendHandler)
-
     const onSetNumOfIngredient = React.useCallback(() => {
         setIngredients(prev => [...prev, {name: '', amount: ''}])
     })
@@ -50,6 +48,7 @@ const Form = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
         const sendRecipeObj = {
+            id: props.location.lastRecipeId + 1,
             name,
             ingredients,
             steps,
@@ -74,12 +73,14 @@ const Form = (props) => {
                 <button type="button" onClick={onSetNumOfIngredient}>Plus ingredient</button>
                 { ingredients.map((item, key) => (
                     <div key={key}>
+                        <p>Ingredient:</p>
                         <input
                             type="text" 
                             key={'name'+key} 
                             value={item ? item.name : ''}
                             onChange={(e) => onSetIngredientName(e.target.value, key)}
                         />
+                        <p>Amount:</p>
                         <input 
                             type="text" 
                             key={'amount'+key} 

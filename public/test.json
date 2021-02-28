@@ -1,14 +1,22 @@
 {
-  "name": {
-    "name": "111",
-    "ingredients": [
-      {
-        "name": "333",
-        "amount": "444"
-      }
-    ],
-    "steps": [
-      "sfdsdf"
-    ]
-  }
+  "recipes": {
+      
+          "name": "Baked Salmon",
+          "ingredients": [
+              { "name": "Salmon", "amount": "1" },
+              { "name": "Pine Nuts", "amount": "1" },
+              { "name": "Butter Lettuce", "amount": "2" },
+              { "name": "Yellow Squash", "amount": "1" },
+              { "name": "Olive Oil", "amount": "0.5" },
+              { "name": "Garlic", "amount": "3" }
+          ],
+          "steps": [
+              "Preheat the oven to 350 degrees.",
+              "Spread the olive oil around a glass baking dish.",
+              "Add the salmon, garlic, and pine nuts to the dish.",
+              "Bake for 15 minutes.",
+              "Add the yellow squash and put back in the oven for 30 mins.",
+              "Remove from oven and let cool for 15 minutes. Add the lettuce and serve."
+          ]
+        }
 }

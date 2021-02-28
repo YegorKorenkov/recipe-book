@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = ({ recipes, sendHandler }) => {
-    console.log(recipes)
+const Home = ({ recipes, sendHandler, lastRecipeId, deleteHandler }) => {
+   
     return (
         <div >
             <h1>Our recipes</h1>
             <Link to={{
                 pathname: '/add-recipe',
-                sendHandler: sendHandler
+                sendHandler: sendHandler,
+                lastRecipeId: lastRecipeId
             }} >
                 <button>+Add new recipe</button>
             </Link>
@@ -28,6 +29,7 @@ const Home = ({ recipes, sendHandler }) => {
                     <li key={key}>{step}</li>
                     ))}
                 </ul>
+                <button onClick={() => deleteHandler(recipe.id)}>Delete recipe</button>
                 </div>
             ))}
     </div>
